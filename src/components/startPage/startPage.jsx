@@ -4,7 +4,10 @@ function StartPage() {
 
   return (
     <>
-        <p>sono la startPage</p>
+        <div className='startContainer'>
+          <p>Who's That Pokemon</p>
+          <button className='startButton'>start</button>
+        </div>
     </>
   )
 }

@@ -9,7 +9,9 @@ function App() {
   return (
     <>
       <div className='app'>
-      {gameState === 1 ? <StartPage/>:""}
+        <div className='cerchio'>
+          {gameState === 1 ? <StartPage/>:""}
+        </div>
       </div>
     </>
   )

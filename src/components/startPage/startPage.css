@@ -1,0 +1,21 @@
+.startButton{
+    background-color: lightblue;
+    width: 25%;
+    height: 10%;
+    border-radius: 2vw;
+    font-size: large;
+}
+
+.startContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.startContainer p{
+    font-weight: bold;
+    font-size: xx-large;
+}

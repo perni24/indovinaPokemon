@@ -1,7 +1,24 @@
+body{
+    margin: 0px;
+}
+
 .app{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 99vw;
-    height: 97vh;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, red 49%, black 49%, black 51%, white 51%);
+}
+
+.cerchio{
+    width: 45vw;
+    height: 45vw;
+    border: 1vw solid black;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
