@@ -6,6 +6,10 @@
     font-size: large;
 }
 
+.startButton:hover{
+    background-color: lightgray;
+}
+
 .startContainer{
     width: 100%;
     height: 100%;

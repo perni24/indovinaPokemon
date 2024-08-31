@@ -8,13 +8,25 @@ body{
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, red 49%, black 49%, black 51%, white 51%);
+    background: linear-gradient(to bottom, red 48%, black 48%, black 52%, white 52%);
 }
 
 .cerchio{
     width: 45vw;
     height: 45vw;
     border: 1vw solid black;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cerchio2{
+    width: 35vw;
+    height: 35vw;
+    border: 0.2vw solid black;
     border-radius: 50%;
     background-color: white;
     display: flex;

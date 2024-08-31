@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import StartPage from './components/startPage/startPage'
+import GamePage from './components/gamePage/gamePage'
+import EndPage from './components/endPage/endPage'
 import './App.css'
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
     <>
       <div className='app'>
         <div className='cerchio'>
-          {gameState === 1 ? <StartPage/>:""}
+          <div className='cerchio2'>
+          {gameState === 1 ? <StartPage gameState={gameState} setGameState={setGameState}/>: gameState === 2 ? <GamePage/> : <EndPage/>}
+          </div>
         </div>
       </div>
     </>

@@ -1,12 +1,14 @@
 import './StartPage.css'
 
-function StartPage() {
+function StartPage({gameState,setGameState}) {
+
+
 
   return (
     <>
         <div className='startContainer'>
           <p>Who's That Pokemon</p>
-          <button className='startButton'>start</button>
+          <button className='startButton' onClick={() => setGameState(gameState+1)}>start</button>
         </div>
     </>
   )
