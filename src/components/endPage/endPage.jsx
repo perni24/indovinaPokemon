@@ -4,6 +4,7 @@ function EndPage() {
 
   return (
     <>
+    game over
     </>
   )
 }

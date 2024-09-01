@@ -1,0 +1,30 @@
+.containerPunteggio{
+    display: flex;
+    flex-direction: row;
+}
+
+.containerPunteggio p{
+    padding-right: 1vw;
+}
+
+.containerPunteggio p b{
+    padding-right: 1vw;
+    font-size: large;
+}
+
+img{
+    width: 15vw;
+}
+
+.containerAzioni{
+    display: flex;
+    flex-direction: row;
+}
+
+.containerAzioni input{
+    margin-right: 1vw;
+}
+
+.containerAzioni button{
+    margin-right: 0.5vw;
+}
