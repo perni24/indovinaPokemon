@@ -1,30 +1,79 @@
-.containerPunteggio{
-    display: flex;
-    flex-direction: row;
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
 }
 
-.containerPunteggio p{
-    padding-right: 1vw;
+@keyframes shake-vertical {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
 }
 
-.containerPunteggio p b{
-    padding-right: 1vw;
-    font-size: large;
+.shake-horizontal {
+  animation: shake-horizontal 0.5s;
 }
 
-img{
-    width: 15vw;
+.shake-vertical {
+  animation: shake-vertical 0.5s;
 }
 
-.containerAzioni{
-    display: flex;
-    flex-direction: row;
+.containerPunteggio {
+  display: flex;
+  flex-direction: row;
 }
 
-.containerAzioni input{
-    margin-right: 1vw;
+.containerPunteggio p {
+  padding-right: 1vw;
 }
 
-.containerAzioni button{
-    margin-right: 0.5vw;
+.containerPunteggio p b {
+  padding-right: 1vw;
+  font-size: large;
+}
+
+img {
+  width: 15vw;
+}
+
+.containerAzioni {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerAzioni input {
+  margin-right: 1vw;
+}
+
+.containerAzioni button {
+  margin-right: 0.5vw;
+}
+
+input {
+  width: 15vw;
+  height: 3vh;
+  border-radius: 2vw;
+  transition: background-color 0.5s ease-in-out;
 }
