@@ -7,7 +7,6 @@ function GamePage({ gameState, setGameState }) {
   const [vite, setVite] = useState(10);
   const [skip, setSkip] = useState(3);
   const [risposta, setRisposta] = useState("");
-  const [colore, setColore] = useState("white");
   const [shakeClass, setShakeClass] = useState("");
 
   useEffect(() => {
@@ -22,15 +21,12 @@ function GamePage({ gameState, setGameState }) {
 
   const azioneRisposta = (ris) => {
     if (ris === 1) {
-      setColore("green");
       setShakeClass("shake-vertical"); // Animazione su-giù
     } else {
-      setColore("red");
       setShakeClass("shake-horizontal"); // Animazione destra-sinistra
     }
 
     setTimeout(() => {
-      setColore("white"); // Ritorna al bianco dopo 1 secondo
       setShakeClass(""); // Rimuove l'animazione dopo 1 secondo
     }, 1000);
   };
@@ -48,6 +44,7 @@ function GamePage({ gameState, setGameState }) {
     if (risposta === pokemon.name) {
       setPunteggio(punteggio + 1);
       azioneRisposta(1);
+      setRisposta("")
     } else {
       setVite(vite - 1);
       azioneRisposta(0);
@@ -71,13 +68,13 @@ function GamePage({ gameState, setGameState }) {
         id="img_pokemon"
         src={pokemon !== null ? pokemon.sprites.front_default : null}
       />
-      <p>id : {pokemon !== null ? pokemon.id : null}</p>
+      <p className="id"><b>id :</b> {pokemon !== null ? pokemon.id : null}</p>
       <div className={`containerAzioni ${shakeClass}`}>
         <input
           type="text"
           value={risposta}
           onChange={(e) => setRisposta(e.target.value)}
-          style={{ backgroundColor: colore }} // Colore dinamico applicato all'input
+        
         />
         <button onClick={controlla}>invia</button>
         <button onClick={() => (skip > 0 ? setSkip(skip - 1) : null)}>skip</button>
