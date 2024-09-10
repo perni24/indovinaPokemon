@@ -113,3 +113,7 @@ input:focus{
   border: 0.1vw solid black;
   padding: 0.25vw 0.25vw;
 }
+
+.containerAzioni button:hover{
+  background-color: gray;
+}

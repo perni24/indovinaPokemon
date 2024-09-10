@@ -4,7 +4,10 @@ function EndPage() {
 
   return (
     <>
-    game over
+      <div className='endContainer'>
+        Game Over
+      </div>
+
     </>
   )
 }
