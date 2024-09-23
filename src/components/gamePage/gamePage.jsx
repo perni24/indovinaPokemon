@@ -1,9 +1,8 @@
 import "./GamePage.css";
 import { useState, useEffect } from "react";
 
-function GamePage({ gameState, setGameState }) {
+function GamePage({ gameState, setGameState, punteggio, setPunteggio }) {
   const [pokemon, setPokemon] = useState(null);
-  const [punteggio, setPunteggio] = useState(0);
   const [vite, setVite] = useState(10);
   const [skip, setSkip] = useState(3);
   const [risposta, setRisposta] = useState("");

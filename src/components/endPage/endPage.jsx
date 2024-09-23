@@ -1,13 +1,13 @@
 import './EndPage.css'
 
-function EndPage() {
+function EndPage({punteggio}) {
 
   return (
     <>
       <div className='endContainer'>
-        Game Over
+        Game Over 
       </div>
-
+      <div><b>punteggio : {punteggio}</b></div>
     </>
   )
 }
